@@ -1,0 +1,1111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a7b7c887-69b2-4184-9092-0cf4e9204651" name="默认更改列表" comment="" />
+    <ignored path="$PROJECT_DIR$/3scale-developer/target/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/3scale-library/target/" />
+    <ignored path="$PROJECT_DIR$/3scale-management/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/3scale-library/src/main/java/com/hisense/gateway/library/service/impl/ApiLogServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-309">
+              <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/3scale-library/src/main/java/com/hisense/gateway/library/service/impl/DataItemServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="46" column="13" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/3scale-library/src/main/java/com/hisense/gateway/library/service/impl/DebuggingServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="43" column="13" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/3scale-library/src/main/java/com/hisense/gateway/library/service/impl/DomainServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/3scale-library/src/main/java/com/hisense/gateway/library/service/EurekaPullApiService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/3scale-library/src/main/java/com/hisense/gateway/library/service/impl/ElasticSearchServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="1044" column="21" selection-start-line="1020" selection-start-column="2" selection-end-line="1044" selection-end-column="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#24474#24498#0" expanded="true" />
+                <element signature="e#32240#32241#0" expanded="true" />
+                <element signature="e#32289#32290#0" expanded="true" />
+                <element signature="e#61258#61259#0" expanded="true" />
+                <element signature="e#61321#61322#0" expanded="true" />
+                <element signature="e#61383#61384#0" expanded="true" />
+                <element signature="e#61446#61447#0" expanded="true" />
+                <element signature="e#62002#62003#0" expanded="true" />
+                <element signature="e#62079#62080#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/3scale-library/src/main/java/com/hisense/gateway/library/service/ElasticSearchService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="37" column="41" selection-start-line="37" selection-start-column="41" selection-end-line="37" selection-end-column="41" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/3scale-developer/src/main/java/com/hisense/gateway/developer/web/controller/AnalyticsController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="277">
+              <caret line="167" column="86" selection-start-line="167" selection-start-column="68" selection-end-line="167" selection-end-column="86" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/3scale-library/src/main/java/com/hisense/gateway/library/service/impl/AnalyticsServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="217">
+              <caret line="183" column="77" selection-start-line="183" selection-start-column="77" selection-end-line="183" selection-end-column="77" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/3scale-management/src/main/java/com/hisense/gateway/management/web/controller/AnalyticsController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="163" column="77" lean-forward="true" selection-start-line="163" selection-start-column="77" selection-end-line="163" selection-end-column="77" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>ldap</find>
+      <find>MailServiceImpl</find>
+      <find>hisen</find>
+      <find>com.ora</find>
+      <find>com.oracle</find>
+      <find>spring-s</find>
+      <find>kafkaTemplate</find>
+      <find>ElasticSearchService</find>
+      <find>elasticSearchService</find>
+      <find>getMatchCount</find>
+      <find>queryForAllList</find>
+      <find>queryForSpecial</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/3scale-library/src/main/java/com/hisense/gateway/library/service/impl/MailServiceImpl.java" />
+        <option value="$PROJECT_DIR$/3scale-developer/pom.xml" />
+        <option value="$PROJECT_DIR$/3scale-management/src/main/java/com/hisense/gateway/management/service/impl/ApprovalServiceImpl.java" />
+        <option value="$PROJECT_DIR$/3scale-management/src/main/java/com/hisense/gateway/management/service/impl/LimitServiceImpl.java" />
+        <option value="$PROJECT_DIR$/3scale-management/src/main/java/com/hisense/gateway/management/web/controller/ProcessRecordController.java" />
+        <option value="$PROJECT_DIR$/3scale-management/src/main/java/com/hisense/gateway/management/web/controller/ApprovalController.java" />
+        <option value="$PROJECT_DIR$/3scale-management/src/main/java/com/hisense/gateway/management/beans/CommonBeanService.java" />
+        <option value="$PROJECT_DIR$/3scale-management/src/main/java/com/hisense/gateway/management/web/controller/AnalyticsController.java" />
+        <option value="$PROJECT_DIR$/3scale-management/src/main/java/com/hisense/gateway/management/service/impl/SystemInfoServiceImpl.java" />
+        <option value="$PROJECT_DIR$/3scale-management/src/main/java/com/hisense/gateway/management/web/controller/SubscribedApiController.java" />
+        <option value="$PROJECT_DIR$/3scale-management/src/main/java/com/hisense/gateway/management/web/controller/DealDataController.java" />
+        <option value="$PROJECT_DIR$/3scale-management/src/main/java/com/hisense/gateway/management/web/controller/AlertPolicyController.java" />
+        <option value="$PROJECT_DIR$/3scale-management/src/main/java/com/hisense/gateway/management/web/controller/MetricController.java" />
+        <option value="$PROJECT_DIR$/3scale-management/src/main/java/com/hisense/gateway/management/web/interceptor/BearerTokenValidator.java" />
+        <option value="$PROJECT_DIR$/3scale-management/src/main/java/com/hisense/gateway/management/service/impl/DealDataServiceImpl.java" />
+        <option value="$PROJECT_DIR$/3scale-management/src/main/java/com/hisense/gateway/management/web/controller/SystemInfoController.java" />
+        <option value="$PROJECT_DIR$/3scale-management/src/main/java/com/hisense/gateway/management/web/controller/AppSynController.java" />
+        <option value="$PROJECT_DIR$/3scale-management/src/main/java/com/hisense/gateway/management/web/controller/EurekaSyncController.java" />
+        <option value="$PROJECT_DIR$/3scale-management/src/main/java/com/hisense/gateway/management/web/controller/ApplicationController.java" />
+        <option value="$PROJECT_DIR$/3scale-management/src/main/java/com/hisense/gateway/management/web/controller/ApiLogController.java" />
+        <option value="$PROJECT_DIR$/3scale-management/src/main/java/com/hisense/gateway/management/web/controller/LimitController.java" />
+        <option value="$PROJECT_DIR$/3scale-management/src/main/java/com/hisense/gateway/management/web/controller/SwaggerDocController.java" />
+        <option value="$PROJECT_DIR$/3scale-management/src/main/java/com/hisense/gateway/management/service/impl/PublishApiGroupServiceImpl.java" />
+        <option value="$PROJECT_DIR$/3scale-management/src/main/java/com/hisense/gateway/management/web/controller/OperationApiController.java" />
+        <option value="$PROJECT_DIR$/3scale-management/src/main/java/com/hisense/gateway/management/service/impl/AccountsServiceImpl.java" />
+        <option value="$PROJECT_DIR$/3scale-management/src/main/java/com/hisense/gateway/management/web/controller/DebuggingController.java" />
+        <option value="$PROJECT_DIR$/3scale-management/src/main/java/com/hisense/gateway/management/web/controller/PublishApiGroupController.java" />
+        <option value="$PROJECT_DIR$/3scale-management/src/main/java/com/hisense/gateway/management/web/controller/DataItemController.java" />
+        <option value="$PROJECT_DIR$/3scale-management/src/main/java/com/hisense/gateway/management/service/impl/AppSynServiceImpl.java" />
+        <option value="$PROJECT_DIR$/3scale-management/src/main/java/com/hisense/gateway/management/service/impl/ServicesServiceImpl.java" />
+        <option value="$PROJECT_DIR$/3scale-management/src/main/java/com/hisense/gateway/management/web/controller/SapConvertInfoController.java" />
+        <option value="$PROJECT_DIR$/3scale-management/src/main/java/com/hisense/gateway/management/web/controller/ApiCommentController.java" />
+        <option value="$PROJECT_DIR$/3scale-management/src/main/java/com/hisense/gateway/management/web/controller/ApiDashboardController.java" />
+        <option value="$PROJECT_DIR$/3scale-management/src/main/java/com/hisense/gateway/management/web/controller/ServicesController.java" />
+        <option value="$PROJECT_DIR$/3scale-management/src/main/java/com/hisense/gateway/management/web/controller/PublishApiController.java" />
+        <option value="$PROJECT_DIR$/3scale-management/src/main/java/com/hisense/gateway/management/ApiManagementApp.java" />
+        <option value="$PROJECT_DIR$/3scale-management/pom.xml" />
+        <option value="$PROJECT_DIR$/3scale-management/src/main/resources/application-dev.yml" />
+        <option value="$PROJECT_DIR$/3scale-management/src/main/java/com/hisense/gateway/management/service/impl/SapConvertInfoServiceImpl.java" />
+        <option value="$PROJECT_DIR$/3scale-management/src/main/java/com/hisense/gateway/management/service/impl/EurekaSyncServiceImpl.java" />
+        <option value="$PROJECT_DIR$/3scale-management/src/main/java/com/hisense/gateway/management/config/SecurityConfig.java" />
+        <option value="$PROJECT_DIR$/3scale-management/src/main/java/com/hisense/gateway/management/config/XxlJobConfig.java" />
+        <option value="$PROJECT_DIR$/3scale-library/pom.xml" />
+        <option value="$PROJECT_DIR$/3scale-library/src/main/java/com/hisense/gateway/library/service/impl/AlertPolicyServiceImpl.java" />
+        <option value="$PROJECT_DIR$/3scale-library/src/main/java/com/hisense/gateway/library/service/ElasticSearchService.java" />
+        <option value="$PROJECT_DIR$/3scale-library/src/main/java/com/hisense/gateway/library/service/impl/ElasticSearchServiceImpl.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="userSettingsFile" value="D:\company\apache-maven-3.6.2\apache-maven-3.6.2\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="3scale-apis" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="3scale-apis" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="3scale-developer" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="3scale-developer" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="3scale-library" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="3scale-library" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="3scale-management" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="3scale-management" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="610" />
+    <option name="y" value="450" />
+    <option name="width" value="1170" />
+    <option name="height" value="660" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="3scale-apis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api-backend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="3scale-apis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api-backend" type="462c0819:PsiDirectoryNode" />
+              <item name="3scale-developer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="3scale-apis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api-backend" type="462c0819:PsiDirectoryNode" />
+              <item name="3scale-developer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="3scale-apis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api-backend" type="462c0819:PsiDirectoryNode" />
+              <item name="3scale-developer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="3scale-apis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api-backend" type="462c0819:PsiDirectoryNode" />
+              <item name="3scale-developer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="docker" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="3scale-apis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api-backend" type="462c0819:PsiDirectoryNode" />
+              <item name="3scale-developer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="3scale-apis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api-backend" type="462c0819:PsiDirectoryNode" />
+              <item name="3scale-developer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="developer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="3scale-apis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api-backend" type="462c0819:PsiDirectoryNode" />
+              <item name="3scale-developer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="developer" type="462c0819:PsiDirectoryNode" />
+              <item name="beans" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="3scale-apis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api-backend" type="462c0819:PsiDirectoryNode" />
+              <item name="3scale-developer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="developer" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="3scale-apis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api-backend" type="462c0819:PsiDirectoryNode" />
+              <item name="3scale-developer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="developer" type="462c0819:PsiDirectoryNode" />
+              <item name="constant" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="3scale-apis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api-backend" type="462c0819:PsiDirectoryNode" />
+              <item name="3scale-developer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="developer" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="3scale-apis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api-backend" type="462c0819:PsiDirectoryNode" />
+              <item name="3scale-developer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="developer" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="3scale-apis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api-backend" type="462c0819:PsiDirectoryNode" />
+              <item name="3scale-developer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="3scale-apis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api-backend" type="462c0819:PsiDirectoryNode" />
+              <item name="3scale-library" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="3scale-apis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api-backend" type="462c0819:PsiDirectoryNode" />
+              <item name="3scale-library" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="3scale-apis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api-backend" type="462c0819:PsiDirectoryNode" />
+              <item name="3scale-library" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="3scale-apis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api-backend" type="462c0819:PsiDirectoryNode" />
+              <item name="3scale-library" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="3scale-apis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api-backend" type="462c0819:PsiDirectoryNode" />
+              <item name="3scale-library" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="library" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="3scale-apis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api-backend" type="462c0819:PsiDirectoryNode" />
+              <item name="3scale-library" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="library" type="462c0819:PsiDirectoryNode" />
+              <item name="beans" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="3scale-apis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api-backend" type="462c0819:PsiDirectoryNode" />
+              <item name="3scale-library" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="library" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="3scale-apis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api-backend" type="462c0819:PsiDirectoryNode" />
+              <item name="3scale-library" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="library" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="3scale-apis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api-backend" type="462c0819:PsiDirectoryNode" />
+              <item name="3scale-library" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="library" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="3scale-apis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api-backend" type="462c0819:PsiDirectoryNode" />
+              <item name="3scale-library" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="library" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="3scale-apis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api-backend" type="462c0819:PsiDirectoryNode" />
+              <item name="3scale-library" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="library" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="3scale-apis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api-backend" type="462c0819:PsiDirectoryNode" />
+              <item name="3scale-library" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="library" type="462c0819:PsiDirectoryNode" />
+              <item name="stud" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="3scale-apis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api-backend" type="462c0819:PsiDirectoryNode" />
+              <item name="3scale-library" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="library" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="3scale-apis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api-backend" type="462c0819:PsiDirectoryNode" />
+              <item name="3scale-library" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="library" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="form" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="3scale-apis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api-backend" type="462c0819:PsiDirectoryNode" />
+              <item name="3scale-library" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ss" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="3scale-apis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api-backend" type="462c0819:PsiDirectoryNode" />
+              <item name="3scale-management" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="3scale-apis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api-backend" type="462c0819:PsiDirectoryNode" />
+              <item name="3scale-management" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="3scale-apis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api-backend" type="462c0819:PsiDirectoryNode" />
+              <item name="3scale-management" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="3scale-apis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api-backend" type="462c0819:PsiDirectoryNode" />
+              <item name="3scale-management" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="3scale-apis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api-backend" type="462c0819:PsiDirectoryNode" />
+              <item name="3scale-management" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="management" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="3scale-apis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api-backend" type="462c0819:PsiDirectoryNode" />
+              <item name="3scale-management" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="management" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="3scale-apis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api-backend" type="462c0819:PsiDirectoryNode" />
+              <item name="3scale-management" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1616555528863" />
+    <property name="go.gopath.indexing.explicitly.defined" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.ApiManagementApp">
+    <configuration name="ApiDeveloperApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="3scale-developer" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hisense.gateway.developer.ApiDeveloperApp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApiManagementApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="3scale-management" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hisense.gateway.management.ApiManagementApp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a7b7c887-69b2-4184-9092-0cf4e9204651" name="默认更改列表" comment="" />
+      <created>1616381550560</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1616381550560</updated>
+      <workItem from="1616381562493" duration="5835000" />
+      <workItem from="1616398743569" duration="1770000" />
+      <workItem from="1616495922201" duration="6440000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="14045000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.325067" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="设计器" order="6" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" weight="0.78500706" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.41867045" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Java Enterprise" order="10" />
+      <window_info anchor="bottom" id="Database Changes" order="11" />
+      <window_info anchor="bottom" id="Version Control" order="12" />
+      <window_info anchor="bottom" id="Spring" order="13" />
+      <window_info anchor="bottom" id="调试" order="14" visible="true" weight="0.042432815" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.3297587" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="调色板" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/3scale-management/src/main/java/com/hisense/gateway/management/service/impl/AutoCreateServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="58" column="27" selection-start-line="58" selection-start-column="27" selection-end-line="58" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3scale-management/src/main/java/com/hisense/gateway/management/web/controller/SwaggerDocController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1281">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3scale-management/src/main/java/com/hisense/gateway/management/service/impl/PublishApiGroupServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="199" column="9" selection-start-line="199" selection-start-column="9" selection-end-line="199" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3scale-management/src/main/java/com/hisense/gateway/management/web/controller/OperationApiController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3scale-management/src/main/java/com/hisense/gateway/management/service/impl/AccountsServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-707">
+          <caret line="269" column="62" selection-start-line="269" selection-start-column="37" selection-end-line="269" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3scale-management/src/main/java/com/hisense/gateway/management/web/controller/DebuggingController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="79">
+          <caret line="31" column="1" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3scale-management/src/main/java/com/hisense/gateway/management/web/controller/PublishApiGroupController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3scale-management/src/main/java/com/hisense/gateway/management/web/controller/DataItemController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3scale-management/src/main/java/com/hisense/gateway/management/service/impl/AppSynServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="221" column="17" lean-forward="true" selection-start-line="221" selection-start-column="17" selection-end-line="221" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3scale-management/src/main/java/com/hisense/gateway/management/service/impl/ServicesServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="120" column="11" selection-start-line="116" selection-start-column="6" selection-end-line="120" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3scale-management/src/main/java/com/hisense/gateway/management/web/controller/SapConvertInfoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3scale-management/src/main/java/com/hisense/gateway/management/web/controller/ApiCommentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3scale-management/src/main/java/com/hisense/gateway/management/web/controller/ApiDashboardController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3scale-management/src/main/java/com/hisense/gateway/management/web/controller/ServicesController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3scale-management/src/main/java/com/hisense/gateway/management/web/controller/PublishApiController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-727">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3scale-management/src/main/java/com/hisense/gateway/management/ApiManagementApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3scale-management/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$MAVEN_REPOSITORY$/com/hisense/api-library/0.1/api-library-0.1.pom">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-212" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3scale-management/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7128">
+          <caret line="324" column="50" selection-start-line="324" selection-start-column="50" selection-end-line="324" selection-end-column="50" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.2.4.RELEASE/spring-web-5.2.4.RELEASE.jar!/org/springframework/web/multipart/commons/CommonsMultipartFile.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="14" column="45" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/9.0.31/tomcat-embed-core-9.0.31.jar!/org/apache/tomcat/util/http/fileupload/FileItem.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3scale-management/src/main/java/com/hisense/gateway/management/service/impl/SapConvertInfoServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="1031" column="20" lean-forward="true" selection-start-line="1031" selection-start-column="20" selection-end-line="1031" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3scale-management/src/main/java/com/hisense/gateway/management/service/impl/EurekaSyncServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1748">
+          <caret line="467" selection-start-line="422" selection-end-line="467" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.2.5.RELEASE/spring-boot-autoconfigure-2.2.5.RELEASE.jar!/org/springframework/boot/autoconfigure/elasticsearch/rest/RestClientConfigurations.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="5" column="60" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3scale-library/src/main/java/com/hisense/gateway/library/config/SystemConfigProperties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3scale-management/src/main/java/com/hisense/gateway/management/config/AlertPolicySyncSchedule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-491">
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3scale-management/src/main/resources/application-dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="182" column="21" selection-start-line="182" selection-start-column="21" selection-end-line="182" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3scale-management/src/main/java/com/hisense/gateway/management/config/Configuration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1715">
+          <caret line="42" column="13" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3scale-management/src/main/java/com/hisense/gateway/management/config/PrimaryDataSourceConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-139">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3scale-management/src/main/java/com/hisense/gateway/management/config/PrimaryProperties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="14" column="1" selection-start-line="12" selection-start-column="42" selection-end-line="14" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3scale-management/src/main/java/com/hisense/gateway/management/config/Properties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3scale-management/src/main/java/com/hisense/gateway/management/config/SecondaryProperties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3scale-management/src/main/java/com/hisense/gateway/management/config/SecondaryDataSourceConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="21" column="37" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3scale-management/src/main/java/com/hisense/gateway/management/config/SecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-73">
+          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3scale-management/src/main/java/com/hisense/gateway/management/config/TaskExecutorPoolConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3scale-management/src/main/java/com/hisense/gateway/management/config/WebConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3549">
+          <folding>
+            <element signature="e#0#8214#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3scale-management/src/main/java/com/hisense/gateway/management/config/XxlJobConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3scale-library/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-858">
+          <caret line="39" column="40" selection-start-line="39" selection-start-column="32" selection-end-line="39" selection-end-column="40" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3scale-library/src/main/java/com/hisense/gateway/library/service/impl/AlertPolicyServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1166">
+          <caret line="28" column="60" lean-forward="true" selection-start-line="28" selection-start-column="60" selection-end-line="28" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3scale-library/src/main/java/com/hisense/gateway/library/service/impl/ApiCastServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3scale-library/src/main/java/com/hisense/gateway/library/service/impl/ApiInvokeRecordServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="43" column="13" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3scale-library/src/main/java/com/hisense/gateway/library/service/impl/ApiLogServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-309">
+          <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3scale-library/src/main/java/com/hisense/gateway/library/service/impl/DataItemServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="46" column="13" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3scale-library/src/main/java/com/hisense/gateway/library/service/impl/DebuggingServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="43" column="13" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3scale-library/src/main/java/com/hisense/gateway/library/service/impl/DomainServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3scale-library/src/main/java/com/hisense/gateway/library/service/EurekaPullApiService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3scale-management/src/main/java/com/hisense/gateway/management/web/controller/AnalyticsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="163" column="77" lean-forward="true" selection-start-line="163" selection-start-column="77" selection-end-line="163" selection-end-column="77" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3scale-library/src/main/java/com/hisense/gateway/library/service/impl/AnalyticsServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="183" column="77" selection-start-line="183" selection-start-column="77" selection-end-line="183" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3scale-library/src/main/java/com/hisense/gateway/library/service/ElasticSearchService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="37" column="41" selection-start-line="37" selection-start-column="41" selection-end-line="37" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3scale-developer/src/main/java/com/hisense/gateway/developer/web/controller/AnalyticsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="167" column="86" selection-start-line="167" selection-start-column="68" selection-end-line="167" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3scale-library/src/main/java/com/hisense/gateway/library/service/impl/ElasticSearchServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="1044" column="21" selection-start-line="1020" selection-start-column="2" selection-end-line="1044" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#24474#24498#0" expanded="true" />
+            <element signature="e#32240#32241#0" expanded="true" />
+            <element signature="e#32289#32290#0" expanded="true" />
+            <element signature="e#61258#61259#0" expanded="true" />
+            <element signature="e#61321#61322#0" expanded="true" />
+            <element signature="e#61383#61384#0" expanded="true" />
+            <element signature="e#61446#61447#0" expanded="true" />
+            <element signature="e#62002#62003#0" expanded="true" />
+            <element signature="e#62079#62080#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

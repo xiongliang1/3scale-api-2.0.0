@@ -1,0 +1,102 @@
+env REDIS_HOST;
+env REDIS_PORT;
+env REDIS_URL;
+env RESOLVER;
+env BACKEND_ENDPOINT_OVERRIDE;
+env OPENSSL_VERIFY;
+
+{% if opentracing_tracer != empty %}
+  {% for file in "modules/ngx_http_opentracing_module.so" | filesystem %}
+load_module {{file}};
+  {% endfor %}
+{% else %}
+  {% if timer_resolution %}
+    timer_resolution {{ timer_resolution }};
+  {% endif %}
+{% endif %}
+
+daemon {{ daemon | default: 'off' }};
+master_process {{ master_process | default: 'on' }};
+worker_processes {{ worker_processes | default: 'auto' }};
+pcre_jit on;
+pid {{ pid | default: 'nginx.pid' }};
+
+{% for file in "main.d/*.conf" | filesystem %}
+  {% include file %}
+{% endfor %}
+
+error_log {{ error_log | default: '/dev/null' }} {{  log_level | default: 'emerg' }};
+
+events {
+  worker_connections  16192;
+  multi_accept        on;
+}
+
+http {
+  sendfile           on;
+  tcp_nopush         on;
+  tcp_nodelay        on;
+  server_tokens off;
+
+
+
+  # Enabling the Lua code cache is strongly encouraged for production use
+  # Disabling it should only be done for testing and development purposes
+  lua_code_cache {{  lua_code_cache | default: 'on' }};
+  lua_max_running_timers {{ lua_running_timers | default: 2048 }};
+  lua_socket_pool_size {{ lua_socket_pool_size | default: 512 }};
+  server_names_hash_bucket_size 128;
+
+  access_log off;
+
+  lua_package_path "{{ lua_path | default: package.path }}";
+  lua_package_cpath "{{ lua_cpath | default: package.cpath }}";
+
+  ignore_invalid_headers off;
+
+  {% if nameservers %}
+    resolver {{ nameservers | join: " " }};
+  {% endif %}
+
+  {%- capture ENV -%}
+    {
+      {%- for env in env -%}
+      {%- if env.name | starts_with: 'APICAST_', 'THREESCALE_' %}
+      [ [[{{ env.name }}]] ] = [[{{ env.value }}]],
+      {%- endif -%}
+    {%- endfor %}
+    }
+  {%- endcapture -%}
+
+  {% for file in "http.d/*.conf" | filesystem %}
+    ## include {{ file }}
+    {% include file %}
+    ## end {{ file }}
+  {% endfor %}
+
+  {% if opentracing_tracer != empty %}
+    {%- capture tracer_conf %}conf.d/opentracing/{{ opentracing_tracer }}.conf.liquid{%- endcapture -%}
+    {% include tracer_conf %}
+  {% endif %}
+
+  {% for file in template | default: 'http.d/apicast.conf.liquid' | filesystem %}
+    {% include file %}
+  {% endfor %}
+
+  lua_shared_dict limiter 1m;
+
+  # This shared dictionaries are only used in the 3scale batcher policy.
+  # This is not ideal, but they'll need to be here until we allow policies to
+  # modify this template.
+  lua_shared_dict cached_auths 1m;
+  lua_shared_dict batched_reports 1m;
+  lua_shared_dict batched_reports_locks 1m;
+  lua_shared_dict dict_hisense_log_del_file 4m; ##mingguilai.ex
+  lua_shared_dict dict_hisense_log_buffer_main 50m;##mingguilai.ex
+
+  {% for file in "sites.d/*.conf" | filesystem %}
+    {% include file %}
+  {% endfor %}
+
+  {{ sites_d }}
+}

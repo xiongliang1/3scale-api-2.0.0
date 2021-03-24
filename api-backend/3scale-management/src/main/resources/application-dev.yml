@@ -1,0 +1,198 @@
+
+feign:
+  sentinel:
+    enabled: true
+
+# 认证配置
+#security:
+#  oauth2:
+#    client:
+#      client-id: pangea
+#      client-secret: 123456
+#      scope: server
+#    resource:
+#      loadBalanced: true
+#      token-info-uri: http://pangea-auth/auth/oauth/check_token
+#    ignore:
+#      urls:
+#        - /v2/api-docs
+#        - /actuator/**
+#        - /user/info/*
+#        - /operlog
+#        - /logininfor
+#        - /swagger-ui.html*
+#        - /webjars/**
+#        - /swagger-resources/**
+#        - /api/v1/**/publishApi/downloadApiDocFile/**
+
+
+
+#请求处理的超时时间
+ribbon:
+  ReadTimeout: 10000
+  ConnectTimeout: 10000
+
+
+server:
+  port: 8080
+spring:
+  jackson:
+    serialization:
+      fail-on-empty-beans: false
+  application:
+    name: api-management
+#  cloud:
+#    config:
+#      fail-fast: true
+#      name: ${spring.application.name}
+#      profile: ${spring.profiles.active}
+#      discovery:
+#        enabled: true
+#        service-id: api-management
+  jpa:
+    database: MYSQL
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+      naming:
+        physical-strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy  # ImprovedNamingStrategy
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+#        order_by.default_null_ordering: last
+    show-sql: true
+  #    database-platform: org.hibernate.dialect.MySQL55Dialect
+  datasource:
+    primary:
+      connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+      driverClassName: com.mysql.jdbc.Driver
+      filters: stat,wall,log4j
+      initialSize: 5
+      maxActive: 20
+      maxPoolPreparedStatementPerConnectionSize: 20
+      maxWait: 60000
+      minEvictableIdleTimeMillis: 300000
+      minIdle: 5
+      poolPreparedStatements: true
+      testOnBorrow: false
+      testOnReturn: false
+      testWhileIdle: true
+      timeBetweenEvictionRunsMillis: 60000
+      type: com.alibaba.druid.pool.DruidDataSource
+      #      url: jdbc:mysql://10.19.52.235:3306/3scale_api?useUnicode=true&characterEncoding=utf-8
+      #      username: root
+      #      password: tenx#cloud999
+      url: jdbc:mysql://10.72.78.125:3306/3scale_api?useUnicode=true&characterEncoding=utf8&characterSetResults=utf8
+      username: root
+      password: P@as12142716
+      validationQuery: SELECT 1 FROM DUAL
+
+#  kafka:
+#    bootstrap-servers: 10.19.48.36:9092,10.19.48.36:9093
+#    producer:
+#      acks: all
+#      retries: 2
+#      batch-size: 1
+#      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+#      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+#      properties:
+#        linger.ms: 1
+
+#  data:
+#    elasticsearch:
+##      cluster-nodes: skywalking-es-cluster.devapps.hisense.com:80
+##      username: api_invoke_record_user
+##      password: hisense
+#      cluster-nodes: 10.19.58.15:9300,10.19.58.16:9300,10.19.58.17:9300
+#      username: elastic
+#      password: hisense
+
+#api:
+#  paas-api: https://hiclouddev.hisense.com
+#  config:
+#    alert:
+#      kafkaTopic: "api_alert_policy"
+#      kafkaEnable: true
+#    elasticSearch:
+#      host: 10.19.58.15,10.19.58.16,10.19.58.17
+#      port: 9200
+#      username: elastic
+#      password: hisense
+#      index: "api_invoke_record_dev-develop-"
+
+
+logging:
+  level:
+#    com.hisense.pangea: debug
+#    com.hisense.gateway.management: debug
+    org.hibernate.type.descriptor.sql.BasicBinder: INFO
+    org.hibernate.engine.query.HQLQueryPla: INFO
+    org.hibernate.engine.QueryParameters: INFO
+
+## curl -XPOST -H "Content-Type: application/json" {host:port}/loggers/class-full-name  -D: {"configuredLevel:": "INFO"}
+management:
+  endpoints:
+    web:
+      exposure:
+        include: env,bus-refresh,health,loggers
+      base-path: /
+
+endpoint:
+  sandbox: https://api-2445582803160.staging.gw.apicast.io:443
+  production: https://api-2445582803160.production.gw.apicast.io:443
+
+
+#pangea:
+#  message:
+#    sendCommonMessage: http://message-hip-message-test.devapps.hisense.com/api/messageInfos/sendCommonMessage
+#    uploadEmailFile:
+#  feign:
+#    ignore-uri:
+#      - /orgUser/queryOrgByUser
+#      - /org/checkOrgCode
+#      - /user/syncLdapInfo
+#      - /orgUser/saveUserOrgByFegin
+#      - /role/saveUserRoleRel
+#      - /user/find/**
+#      - /user/selectListByLoginNames/**
+
+#flow:
+#  bpm:
+#    service-url: http://10.19.34.80:9090/
+#    apiBasic-url: com.hisense.bpm.
+
+#  app:
+#    key: N4dLEpIoenUFgAgmekVqPQ==
+#    tenantID:
+#    processDefName:
+#    operationCode: com.hisense.bpm.rest.createAndStartProcessInstance
+#    tableName: bizinfo
+#    link: http://hip-web-hisense-apigateway-test.devapps.hisense.com/flowNeedDo/api/v1/process/needTodo
+#    im-link: https://kk-proxy.hisense.com/hiphichat/#/approvalAgency
+
+#xxl:
+#    job:
+#        admin:
+#            addresses: http://${XXL_JOB_HOST:localhost}/xxl-job-admin
+#        executor:
+#            appname: hip-job
+#            ip:
+#            port: 9012
+#            logretentiondays: -1
+#            logpath: deployments/xxlLog/applogs/xxl-job/jobhandler
+#        accessToken:
+
+#hip:
+#  message:
+#    testAddress: http://${DEV_MESSAGE_ADDR:message-backend.hip-message-test.svc.cluster.local}:8280
+#    prdAddress: http://${PRD_MESSAGE_ADDR:message-backend.hip-message-test.svc.cluster.local}:8280
+#  fuse:
+#    devAutoCreate: http://${HIP_FUSE_AUTOCREATE_DEV:xyksap-auto-to-rest.devapps.hisense.com}/createSapSrc
+#    devHost: ${HIP_FUSE_HOST_DEV:hisense-fuse-dev.svc.cluster.local:8082}
+#    prdAutoCreate: ${HIP_FUSE_AUTOCREATE_PRD:http://sap-auto-to-rest-prd.devapps.hisense.com/setprdenv}
+#    prdHost: ${HIP_FUSE_HOST_PRD:hisense-fuse-prd.svc.cluster.local:8082}
+#    apiDetails: ${HIP_FUSE_APIDETAILS:http://hip-web-hisense-apigateway-test.devapps.hisense.com/gateway/apiDetails}
+#    devSapGroupUrl: http://api-gw-test.devapps.hisense.com/hip/services/rest/server/containers/instances/sapauto_1.0.0-SNAPSHOT?user_key=a52289199882f1dbcf5bb1b69a807ad9
+#
+#project:
+#  admin: zhangjian17

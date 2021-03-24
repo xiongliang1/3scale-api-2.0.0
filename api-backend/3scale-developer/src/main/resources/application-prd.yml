@@ -1,0 +1,168 @@
+server:
+  port: 8080
+spring:
+  jackson:
+    serialization:
+      fail-on-empty-beans: false
+  application:
+    name: api-portal
+  cloud:
+    client:
+      hostname: api-portal
+  jpa:
+    database: ORACLE
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+      naming:
+        physical-strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy  # ImprovedNamingStrategy
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.Oracle12cDialect
+        order_by.default_null_ordering: last
+    show-sql: true
+    #    database-platform: org.hibernate.dialect.MySQL55Dialect
+  datasource:
+    primary:
+      connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+      driverClassName: oracle.jdbc.OracleDriver
+      filters: stat,wall,log4j
+      initialSize: 5
+      maxActive: 20
+      maxPoolPreparedStatementPerConnectionSize: 20
+      maxWait: 60000
+      minEvictableIdleTimeMillis: 300000
+      minIdle: 5
+      poolPreparedStatements: true
+      testOnBorrow: false
+      testOnReturn: false
+      testWhileIdle: true
+      timeBetweenEvictionRunsMillis: 60000
+      type: com.alibaba.druid.pool.DruidDataSource
+      url: jdbc:oracle:thin:@10.19.57.44:1521:apiprddb
+      username: apiprduser
+      password: hisensen2016
+      validationQuery: SELECT 1 FROM DUAL
+    secondary:
+      driverClassName: oracle.jdbc.OracleDriver
+      url: jdbc:oracle:thin:@10.19.57.44:1521:apiprddb
+      username: apiprduser
+      password: hisensen2016
+
+  data:
+    elasticsearch:
+#      cluster-nodes: 10.19.42.64:9200,10.19.42.65:9200,10.19.42.63:9200
+      cluster-nodes: collector-es.prdapp.hisense.com:80
+      username:
+      password:
+  kafka:
+    bootstrap-servers: 10.19.42.66:9092,10.19.42.66:9093,10.19.42.67:9092,10.19.42.67:9093,10.19.42.68:9092,10.19.42.68:9093
+    producer:
+      acks: all
+      retries: 2
+      batch-size: 1
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+      properties:
+        linger.ms: 1
+
+
+api:
+  paas-api: https://hiclouddev.hisense.com
+  config:
+    alert:
+      kafkaTopic: "api_alert_policy"
+      kafkaEnable: true
+    elasticSearch:
+#      host: 10.19.42.64,10.19.42.65,10.19.42.63
+      host: collector-es.prdapp.hisense.com
+      port: 80
+      index: "api_invoke_record_prd-"
+
+## curl -XPOST -H "Content-Type: application/json" {host:port}/loggers/class-full-name  -D: {"configuredLevel:": "INFO"}
+management:
+  endpoints:
+    web:
+      exposure:
+        include: env,bus-refresh,health,loggers
+      base-path: /
+
+#ldap:
+#  appSecretId: ${sso.appsecretid}
+#  appSecretKey: ${sso.appsecretkey}
+#  ldapAppSecretId: ${ldap.appsecretid}
+#  targetUri: ${sso.targeturi}
+#  callApiTokenUrl: ${sso.callapitokenurl}
+#  checkLoginUrl: ${sso.checkloginurl}
+#  ldapQueryTokenUrl: ${ldap.querytokenurl}
+#  ldapQueryInfoParamsUrl: ${ldap.queryinfoparamsurl}
+#  forwardBusinessSystemUrl: ${sso.forwardbusinesssystemurl}
+#  checkSsoLoginTokenUrl: ${sso.checkssologintokenurl}
+#  userInfoUri: ${sso.userInfoUri}
+
+#audience:
+#  clientId: ${audience.clientId}
+#  base64Secret: ${audience.base64Secret}
+#  name: ${audience.name}
+#  expiresSecond: ${audience.expiresSecond}
+ldap:
+  appSecretId: sys_hicloud
+  appSecretKey: 7e44f4714e91e80cb446dd64f4d02e4f
+  ldapAppSecretId: sys_xyhcloud
+  targetUri: https://gw-inter.3scale-admin.devapps.hisense.com
+  callApiTokenUrl: https://sso.hisense.com/sso-ws/tokenRestfulApi/getCallApiToken?appSecretId=sys_hicloud&appSecretKey=7e44f4714e91e80cb446dd64f4d02e4f
+  checkLoginUrl: https://sso.hisense.com/sso-ws/ssoLoginRestfulApi/checkLogin
+  ldapQueryTokenUrl: https://sso.hisense.com/sso-ws/tokenRestfulApi/getLdapQueryToken?appSecretId=sys_xyhcloud&appSecretKey=c504d606b5438d3158f0a8ab132cc1f1&eidClass=ldap
+  ldapQueryInfoParamsUrl: http://ldapapi.hisense.com/esc-ws/services/ldapQueryInfoParams?wsdl
+  forwardBusinessSystemUrl: https://sso.hisense.com/sso-ws/ssoLoginRestfulApi/forwardBusinessSystem
+  checkSsoLoginTokenUrl: https://sso.hisense.com/sso-ws/ssoLoginRestfulApi/checkSsoLoginToken
+  userInfoUri: https://sso.hisense.com/profile/oauth2/profile
+  appid: ${LDAP_ID:sys_xizxdev} #测试环境=sys_xizxdev
+  appSecret: ${LDAP_APPSECRET:2222e0ae8bdfc3ecbafd56c56b9daaab} #测试环境=2222e0ae8bdfc3ecbafd56c56b9daaab
+  tokenUrl: ${LDAP_TOKEN_URL:https://ssodev.hisense.com/sso-ws/tokenRestfulApi/getLdapQueryToken}  #测试环境 ssodev.hisense.com
+  userWebservices: ${LDAP_USER_WEBSERVICES:http://idmdev.hisense.com/esc-ws/services/ldapQueryInfoParams?wsdl} #测试环境 http://idmdev.hisense.com/esc-ws/services/ldapQueryInfoParams?wsdl
+
+audience:
+  clientId: 098f6bcd4621d373cade4e832627b4f6
+  base64Secret: MDk4ZjZiY2Q0NjIxZDM3M2NhZGU0ZTgzMjYyN2I0ZjY=
+  name: restapiuser
+  expiresSecond: 172800
+
+pangea:
+  message:
+    sendCommonMessage: https://open-gw.hisense.com:443/message/api/messageInfos/sendCommonMessage?app_id=5a536021&app_key=7261021ea231712228eca691141e0ea6
+    uploadEmailFile:
+
+
+#sso测试环境配置
+sso:
+  client:
+    id: ${SSO_CLIENT_ID:sys_ronghejicheng} #
+    secret: ${SSO_CLIENT_SECRET:2186cdfd-4978-4f4d-8c38-533718ec443d}
+  login:
+    url: ${SSO_LOGIN_URL:https://sso.hisense.com/profile/oauth2/authorize}
+  accessToken:
+    url: https://sso.hisense.com/profile/oauth2/accessToken
+  userInfo:
+    url: ${SSO_USERINFO_URL:https://sso.hisense.com/profile/oauth2/profile}
+  redirect:
+    url: https://api.hisense.com
+  target:
+    url: https://api.hisense.com
+
+flow:
+  bpm:
+    service-url: http://10.19.38.243:9090/
+    apiBasic-url: com.hisense.bpm.
+
+  app:
+    key: +nwAS9T6v0ASfabc0f01yQ==
+    tenantID:
+    processDefName:
+    operationCode: com.hisense.bpm.rest.createAndStartProcessInstance
+    tableName: bizinfo
+    link: https://hip.hisense.com/flowNeedDo/api/v1/process/needTodo
+    im-link: https://kk-proxy.hisense.com/hiphichatprd/#/approvalAgency
+
+project:
+  admin: zhangjian17   # 项目管理员

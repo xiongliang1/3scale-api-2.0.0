@@ -1,0 +1,180 @@
+# !/bin/bash
+#
+# 使用说明: 
+#	1-下载后放到 d:\debug 路径下, 不要与原有工程代码混在一起
+#	2-本地需安装git,java工具
+# 
+# 命令如下
+# 3scale start  # 它会自动在脚本所在路径里边 下载源代码并编译，启动, 如果此路径已有源码则不下载
+#               # 日志默认输出在 d:\debug\log-3scale-management-当前时间戳毫秒精确
+#
+# 3scale clean  # 清理
+# 3scale stop   # 结束进程
+#         
+
+export StepIndex=0;
+
+function LOG_Title() {
+	if [ $StepIndex -gt 0 ];then
+		printf "\n\n";
+	fi;
+	local _date=`date "+%Y-%m-%d %H:%M:%S"`;
+	printf "\n\n\n\n===== <$StepIndex> [$_date] %-25s ==> $1\n" ${FUNCNAME[1]};
+}
+
+function LOG_Debug() {
+	local _date=`date "+%Y-%m-%d %H:%M:%S"`;
+	printf "$_date [DEBUG] $1\n" "$RealmeBlank";
+}
+
+function LOG_Error() {
+	local _date=`date "+%Y-%m-%d %H:%M:%S"`;
+	printf "$_date [ERROR] $1\n" "$RealmeBlank";
+}
+
+function LIB_KillProcess() {
+	TAG=$1;
+	ps aux|grep -E "$TAG"
+	pids=`ps aux|grep -E "$TAG"|grep -v -E "grep"|awk '{print $2 " " $NF}'|awk '{print $1}'`;
+	for pid in $pids
+	do
+		echo -e "Try to kill process: $pid\n";
+		kill -9 $pid;
+	done;
+}
+
+function check_env(){
+	if [ `which java|wc -l` -le 0 ];then
+		LOG_Error "please install java first of all,exit now";
+		exit;
+	fi;
+	
+	if [ `which git|wc -l` -le 0 ];then
+		LOG_Error "please install git first of all,exit now";
+		exit;
+	fi;
+}
+
+function check_source(){
+	DIR=`pwd`;
+	WORK_DIR=`pwd`;
+	local __ret1=$1;
+	
+	LOG_Title "check sourece"
+	
+	source=`find $DIR -name "3scale-management"`;
+	#echo "source=$source"
+	if [ -z "$source" ];then
+		LOG_Debug "start to download source now ....."
+		git clone http://gitlab.hisense.com/dev_dep/hicloud/api-backend.git -b dev
+		cd api-backend;
+		git pull --rebase;
+		WORK_DIR=$DIR/api-backend/3scale-management;
+	else
+		for workDir in $source 
+		do 
+			WORK_DIR=$workDir;
+			break;
+		done
+	fi;
+	
+	if [ -n "$WORK_DIR" ];then
+		LOG_Debug "Source ready $workDir"
+		eval $__ret1="'$WORK_DIR'";
+	else
+		LOG_Error "work dir not found,exit now."
+		exit;
+	fi;
+}
+
+function check_target(){
+	workDir=$1;
+	targetDir=$workDir/target
+	local __ret1=$2;
+	
+	if [ ! -d $workDir ];then
+		LOG_Error "3scale-management dir not found,exit now."
+		exit;
+	fi;
+	
+	targetJar=$targetDir/3scale-management.jar
+	
+	if [ ! -f $targetJar ];then
+		LOG_Debug "start to build source";
+		cd $workDir
+		LOG_Debug "----build source now"
+		mvn package -Dmaven.test.skip=true
+	fi;
+	
+	eval $__ret1="'$targetJar'";
+}
+
+function app_utils(){
+	case "$1" in
+		"start")
+			MYSQL1_HOST=10.19.52.235
+			MYSQL1_PORT=3306
+			MYSQL1_USER=root
+			MYSQL1_PASSWORD=tenx#cloud999
+			MYSQL2_HOST=10.19.52.235
+			MYSQL2_PORT=3306
+			MYSQL2_USER=root
+			MYSQL2_PASSWORD=tenx#cloud999
+			PAAS_URL=https://hiclouddev.hisense.com
+			ENDPOINT_SANDBOX=https://api-2445582803160.staging.gw.apicast.io:443
+			ENDPOINT_PRODUCTION=https://api-2445582803160.production.gw.apicast.io:443
+			
+			ENV_PROPERTIES="\
+			-Xms256m  -Xmx1g -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap \
+			-Dspring.profiles.active=test \
+			-Dmysql1.host=${MYSQL1_HOST} \
+			-Dmysql1.port=${MYSQL1_PORT} \
+			-Dmysql1.user=${MYSQL1_USER} \
+			-Dmysql1.password=${MYSQL1_PASSWORD} \
+			-Dmysql2.host=${MYSQL2_HOST} \
+			-Dmysql2.port=${MYSQL2_PORT} \
+			-Dmysql2.user=${MYSQL2_USER} \
+			-Dmysql2.password=${MYSQL2_PASSWORD} \
+			-Dpaas_url=${PAAS_URL} \
+			-Dendpoint.sandbox=${ENDPOINT_SANDBOX} \
+			-Dendpoint.production=${ENDPOINT_PRODUCTION} \
+			-Djava.security.egd=file:/dev/./urandom \
+			"
+			
+			#LOG_LEVEL="--logging.level.root=trace "
+			
+			check_env;
+			check_source workDir;
+			check_target $workDir targetJar;
+			DAT_LOG=$workDir/../../log-3scale-management-`date "+%Y%m%d_%H_%M_%S"`.txt;
+			
+			LOG_Title "start now >>>>>>>>>>>"
+			echo java $ENV_PROPERTIES -jar $targetJar
+			java $ENV_PROPERTIES -jar $targetJar $LOG_LEVEL > ${DAT_LOG} 2>&1 &
+		;;
+		
+		"clean")
+			check_env;
+			check_source workDir;
+			cd $workDir;
+			LOG_Debug "----clean source now"
+			mvn clean;
+			LOG_Debug "done";
+		;;
+	esac;
+}
+
+function do_start() {
+	case "$1" in
+		"start"|"clean")
+			app_utils $1;
+		;;
+		
+		"stop")
+			LIB_KillProcess "3scale"
+		;;
+	esac
+}
+
+do_start $@;
+

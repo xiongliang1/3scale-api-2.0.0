@@ -1,0 +1,38 @@
+{
+  "$schema": "http://apicast.io/policy-v1/schema#manifest#",
+  "name": "Hisense Log Config",
+  "summary": "Log for record api access",
+  "description": [
+    "Log record for api access by mingguilai"
+  ],
+  "version": "builtin",
+  "configuration": {
+    "type": "object",
+    "properties": {
+      "enable": {
+        "description": "Whether to enable log",
+        "type": "boolean",
+        "default": false
+      },
+      "maxLength": {
+        "description": "max length for one record with bytes",
+        "type": "number",
+        "default": 1048576
+      },
+      "serviceId": {
+        "description": "apiId for api which need to record log during invoking",
+        "type": "string",
+        "default": "0"
+      },
+      "advanceLog": {
+        "description": "Whether to enable advanced logging such as requestBody & responseBody",
+        "type": "boolean",
+        "default": false
+      }
+    },
+    "required": [
+      "serviceId",
+      "advanceLog"
+    ]
+  }
+}

@@ -1,0 +1,194 @@
+feign:
+  sentinel:
+    enabled: true
+
+# 认证配置
+security:
+  oauth2:
+    client:
+      client-id: pangea
+      client-secret: 123456
+      scope: server
+    resource:
+      loadBalanced: trues
+      token-info-uri: http://pangea-auth/auth/oauth/check_token
+    ignore:
+      urls:
+        - /v2/api-docs
+        - /actuator/**
+        - /user/info/*
+        - /operlog
+        - /logininfor
+        - /swagger-ui.html*
+        - /webjars/**
+        - /swagger-resources/**
+        - /api/v1/**/publishApi/downloadApiDocFile/**
+
+
+#请求处理的超时时间
+ribbon:
+  ReadTimeout: 10000
+  ConnectTimeout: 10000
+
+
+server:
+  port: 8080
+spring:
+  jackson:
+    serialization:
+      fail-on-empty-beans: false
+  application:
+    name: api-management
+  cloud:
+    config:
+      fail-fast: true
+      name: ${spring.application.name}
+      profile: ${spring.profiles.active}
+      discovery:
+        enabled: true
+        service-id: api-management
+  jpa:
+    database: ORACLE
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+      naming:
+        physical-strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy  # ImprovedNamingStrategy
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.Oracle12cDialect
+        order_by.default_null_ordering: last
+    show-sql: true
+  #    database-platform: org.hibernate.dialect.MySQL55Dialect
+  datasource:
+    primary:
+      connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+      driverClassName: oracle.jdbc.OracleDriver
+      filters: stat,wall,log4j
+      initialSize: 5
+      maxActive: 20
+      maxPoolPreparedStatementPerConnectionSize: 20
+      maxWait: 60000
+      minEvictableIdleTimeMillis: 300000
+      minIdle: 5
+      poolPreparedStatements: true
+      testOnBorrow: false
+      testOnReturn: false
+      testWhileIdle: true
+      timeBetweenEvictionRunsMillis: 60000
+      type: com.alibaba.druid.pool.DruidDataSource
+      url: jdbc:oracle:thin:@10.19.57.44:1521:apiprddb
+      username: apiprduser
+      password: hisensen2016
+      validationQuery: SELECT 1 FROM DUAL
+    secondary:
+      driverClassName: oracle.jdbc.OracleDriver
+      url: jdbc:oracle:thin:@10.19.57.44:1521:apiprddb
+      username: apiprduser
+      password: hisensen2016
+
+  kafka:
+    bootstrap-servers: 10.19.42.66:9092,10.19.42.66:9093,10.19.42.67:9092,10.19.42.67:9093,10.19.42.68:9092,10.19.42.68:9093
+    producer:
+      acks: all
+      retries: 2
+      batch-size: 1
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+      properties:
+        linger.ms: 1
+
+  data:
+    elasticsearch:
+      #cluster-nodes: 10.19.42.63:9200,10.19.42.64:9200,10.19.42.65:9200
+      cluster-nodes: collector-es.prdapp.hisense.com:80
+      username:
+      password:
+
+api:
+  paas-api: https://hiclouddev.hisense.com
+  config:
+    alert:
+      kafkaTopic: "api_alert_policy"
+      kafkaEnable: true
+    elasticSearch:
+#      host: 10.19.42.63,10.19.42.64,10.19.42.65
+      host: collector-es.prdapp.hisense.com
+      port: 80
+      index: "api_invoke_record_prd-"
+
+
+logging:
+  level:
+    org.hibernate.type.descriptor.sql.BasicBinder: INFO
+    org.hibernate.engine.query.HQLQueryPla: INFO
+    org.hibernate.engine.QueryParameters: INFO
+
+## curl -XPOST -H "Content-Type: application/json" {host:port}/loggers/class-full-name  -D: {"configuredLevel:": "INFO"}
+management:
+  endpoints:
+    web:
+      exposure:
+        include: env,bus-refresh,health,loggers
+      base-path: /
+
+endpoint:
+  sandbox: https://api-2445582803160.staging.gw.apicast.io:443
+  production: https://api-2445582803160.production.gw.apicast.io:443
+
+
+pangea:
+  message:
+    sendCommonMessage: https://open-gw.hisense.com:443/message/api/messageInfos/sendCommonMessage?app_id=5a536021&app_key=7261021ea231712228eca691141e0ea6
+    uploadEmailFile:
+  feign:
+      ignore-uri:
+        - /orgUser/queryOrgByUser
+        - /org/checkOrgCode
+        - /user/syncLdapInfo
+        - /orgUser/saveUserOrgByFegin
+        - /role/saveUserRoleRel
+        - /user/find/**
+        - /user/selectListByLoginNames/**
+
+flow:
+  bpm:
+    service-url: http://10.19.38.243:9090/
+    apiBasic-url: com.hisense.bpm.
+
+  app:
+    key: +nwAS9T6v0ASfabc0f01yQ==
+    tenantID:
+    processDefName:
+    operationCode: com.hisense.bpm.rest.createAndStartProcessInstance
+    tableName: bizinfo
+    link: https://hip.hisense.com/flowNeedDo/api/v1/process/needTodo
+    im-link: https://kk-proxy.hisense.com/hiphichatprd/#/approvalAgency
+
+xxl:
+    job:
+        admin:
+            addresses: http://${XXL_JOB_HOST:localhost}/xxl-job-admin
+        executor:
+            appname: hip-job
+            ip:
+            port: 9012
+            logretentiondays: -1
+            logpath: deployments/xxlLog/applogs/xxl-job/jobhandler
+        accessToken:
+
+
+hip:
+  message:
+    testAddress: http://${DEV_MESSAGE_ADDR:message-backend.hisense-hip-prd.svc.cluster.local}:8280
+    prdAddress: http://${PRD_MESSAGE_ADDR:message-backend.hisense-hip-prd.svc.cluster.local}:8280
+  fuse:
+    devAutoCreate: http://${HIP_FUSE_AUTOCREATE_DEV:xyksap-auto-to-rest.devapps.hisense.com}/createSapSrc
+    devHost: ${HIP_FUSE_HOST_DEV:hisense-fuse-dev.svc.cluster.local:8082}
+    prdAutoCreate: ${HIP_FUSE_AUTOCREATE_PRD:http://sap-auto-to-rest-prd.devapps.hisense.com/setprdenv}
+    prdHost: ${HIP_FUSE_HOST_PRD:hisense-fuse-prd.svc.cluster.local:8082}
+    apiDetails: ${HIP_FUSE_APIDETAILS:https://hip.hisense.com/gateway/apiDetails}
+    devSapGroupUrl: http://api-gw.hisense.com/hip/services/rest/server/containers/instances/sapauto_1.0.0?user_key=c237308e344ba90ec01eb1ee70d9cf41
+
+project:
+  admin: zhangjian17   # 项目管理员

@@ -1,0 +1,21 @@
+spring:
+  security:
+    user:
+      name: admin
+      password: 123456
+  devtools:
+    restart:
+      enabled: true
+  main:
+    allow-bean-definition-overriding: true
+  cloud:
+    nacos:
+      server-addr: http://${NACOS_ADDR:10.19.40.163:8004}
+#      server-addr: http://10.19.40.163:8004
+      discovery:
+        server-addr: ${spring.cloud.nacos.server-addr}
+        namespace: public
+      config:
+        server-addr: ${spring.cloud.nacos.server-addr}
+        file-extension: yaml
+        namespace: public
